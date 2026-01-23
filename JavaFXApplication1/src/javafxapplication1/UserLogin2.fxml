@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: F6F3C2;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ImageView fitHeight="212.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/Untitled-1.png" />
+         </image>
+      </ImageView>
+   </top>
+   <center>
+      <AnchorPane prefHeight="326.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="170.0" layoutY="118.0" text="User Name :" textFill="#e37434">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="276.0" layoutY="116.0" prefHeight="27.0" prefWidth="277.0" promptText="Enter your username" style="-fx-background-color: transparent; -fx-border-color: #e37434; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label layoutX="285.0" layoutY="6.0" prefHeight="40.0" prefWidth="145.0" text="Welcome!" textFill="#e37434">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="292.0" layoutY="217.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="133.0" style="-fx-background-color: #e37434;" text="Log In" textFill="#f6f3c2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
