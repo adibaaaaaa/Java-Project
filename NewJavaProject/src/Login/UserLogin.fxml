@@ -1,42 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: FDFAF6;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="816.0" style="-fx-background-color: FDFAF6;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.UserLoginController">
    <top>
-      <ImageView fitHeight="212.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="169.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@images/Untitled-1.png" />
          </image>
       </ImageView>
    </top>
    <center>
-      <AnchorPane prefHeight="326.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="170.0" layoutY="121.0" text="User Name :" textFill="#123458">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <TextField layoutX="276.0" layoutY="116.0" prefHeight="27.0" prefWidth="277.0" promptText="Enter your username" style="-fx-background-color: transparent; -fx-border-color: #123458; -fx-border-width: 0px 0px 2px 0px;" />
-            <Label layoutX="285.0" layoutY="6.0" prefHeight="40.0" prefWidth="178.0" text="Welcome!" textFill="#123458">
-               <font>
-                  <Font name="Elephant" size="28.0" />
-               </font>
-            </Label>
-            <Button layoutX="292.0" layoutY="217.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="133.0" style="-fx-background-color: #123458;" text="Log In" textFill="#fdfaf6">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" text="Welcome!" textFill="#123458" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Elephant" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="228.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" text="Username:" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Elephant" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="417.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="498.0">
+                           <children>
+                              <TextField fx:id="username" prefHeight="52.0" prefWidth="416.0" promptText="Enter your username" style="-fx-background-color: transparent; -fx-border-color: #123458; -fx-border-width: 0px 0px 2px 0px;">
+                                 <VBox.margin>
+                                    <Insets right="15.0" top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="ErrorLabel" prefHeight="31.0" prefWidth="416.0" textFill="#990f0f">
+                                 <font>
+                                    <Font name="Elephant" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-color: #123458;" text="Back" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="155.0" prefWidth="616.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="UserLoginBtn" mnemonicParsing="false" onAction="#LoadEmergencyPage" prefHeight="28.0" prefWidth="133.0" style="-fx-background-color: #123458;" text="Log In" textFill="#fdfaf6" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="200.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
          </children>
-      </AnchorPane>
+      </VBox>
    </center>
 </BorderPane>

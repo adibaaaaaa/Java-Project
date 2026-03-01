@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: FDFAF6;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.AuthoritySignupController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="816.0" style="-fx-background-color: FDFAF6;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.AuthoritySignupController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="353.0" BorderPane.alignment="CENTER">
          <children>
@@ -39,6 +39,11 @@
                   <Font name="Elephant" size="13.0" />
                </font>
             </Hyperlink>
+            <Button fx:id="backButton" layoutX="27.0" layoutY="528.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-color: #123458;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Elephant" size="14.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </left>
@@ -163,7 +168,7 @@
                      <children>
                         <Pane prefHeight="78.0" prefWidth="354.0">
                            <children>
-                              <Button fx:id="Authority_signup" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#LoadAuthorityDashboard" prefHeight="24.0" prefWidth="127.0" style="-fx-background-color: FDFAF6;" text="Sign Up" textFill="#123458">
+                              <Button fx:id="Authority_signup" alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#LoadAuthorityDashboard" prefHeight="24.0" prefWidth="127.0" style="-fx-background-color: FDFAF6; -fx-background-radius: 10;" text="Sign Up" textFill="#123458">
                                  <font>
                                     <Font name="Elephant" size="14.0" />
                                  </font>
