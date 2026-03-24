@@ -14,288 +14,352 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="816.0" style="-fx-background-color: #123458;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.UserSignupController">
-   <left>
-      <AnchorPane prefHeight="500.0" prefWidth="353.0" style="-fx-background-color: FDFAF6;" BorderPane.alignment="CENTER">
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.UserSignupController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Label layoutX="102.0" layoutY="116.0" prefHeight="20.0" prefWidth="193.0" text="Enter your information" textFill="#123458">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@images/Untitled-1.png" />
+                  <Image url="@images/abstract-grainy-texture-background.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="102.0" layoutY="64.0" text="User SignUp" textAlignment="CENTER" textFill="#123458">
-               <font>
-                  <Font name="Elephant Italic" size="25.0" />
-               </font>
-            </Label>
-            <Hyperlink fx:id="Login_link" layoutX="90.0" layoutY="387.0" onAction="#LoginPageLink" text="Already have an account?" textFill="#123458" underline="true">
-               <font>
-                  <Font name="Elephant" size="15.0" />
-               </font>
-            </Hyperlink>
-            <Label layoutX="206.0" layoutY="166.0" text="Email ID :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="248.0" layoutY="35.0" text="NID :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="254.0" layoutY="90.0" text="Age :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="230.0" layoutY="165.0" text="Gender :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="199.0" layoutY="43.0" text="Phone Number :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="222.0" layoutY="453.0" text="Emergency Contact :" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="14.0" />
-               </font>
-            </Label>
-            <Button fx:id="backButton" layoutX="32.0" layoutY="535.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-color: #123458;" text="Back" textFill="WHITE">
-               <font>
-                  <Font name="Elephant" size="12.0" />
-               </font>
-            </Button>
-         </children></AnchorPane>
-   </left>
-   <center>
-      <VBox prefHeight="537.0" prefWidth="384.0" spacing="5.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label text="Personal Information" textFill="#fdfaf6" underline="true">
-               <font>
-                  <Font name="Elephant" size="15.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-               <VBox.margin>
-                  <Insets left="5.0" top="5.0" />
-               </VBox.margin>
-            </Label>
-            <HBox prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Set UserName :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="UserName" prefHeight="27.0" prefWidth="205.0" promptText="Set UserName" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <padding>
-                        <Insets left="3.0" />
-                     </padding>
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="39.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Name :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Name" prefHeight="27.0" prefWidth="205.0" promptText="Full Name" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="85.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Gender :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Gender" prefHeight="27.0" prefWidth="205.0" promptText="Male/Femal" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="131.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Age :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Age" prefHeight="27.0" prefWidth="205.0" promptText="Age" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="177.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Phone Number :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="PhoneNum" prefHeight="27.0" prefWidth="205.0" promptText="ex.017xxxxxxxx" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="223.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="NID :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Nid" prefHeight="27.0" prefWidth="205.0" promptText="NId no." style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="269.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Email ID :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Email" prefHeight="27.0" prefWidth="205.0" promptText="Email Id" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="315.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Emergency Contact :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="EmgContact" prefHeight="27.0" prefWidth="205.0" promptText="Emergency Contact" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <ComboBox fx:id="Addressbox" editable="true" onAction="#AddressInfo" prefHeight="25.0" prefWidth="225.0" promptText="City/Area" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets left="5.0" />
-               </VBox.margin></ComboBox>
-            <Label text="Medical Information" textFill="#fdfaf6" underline="true">
-               <font>
-                  <Font name="Elephant" size="15.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-               <VBox.margin>
-                  <Insets left="5.0" top="5.0" />
-               </VBox.margin>
-            </Label>
-            <HBox prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Blood Group :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Blood" prefHeight="27.0" prefWidth="205.0" promptText="ex. B+" style="-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS" />
-               </children>
-               <VBox.margin>
-                  <Insets right="5.0" />
-               </VBox.margin>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="421.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <Label text="Allergies :" textFill="WHITE">
-                     <font>
-                        <Font name="Elephant" size="14.0" />
-                     </font>
-                     <padding>
-                        <Insets left="7.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <TextField fx:id="Allergy" prefHeight="27.0" prefWidth="205.0" promptText="Any allergies?" style="-fx-background-color: transparent; -fx-border-color: #FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                  </TextField>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
-               <children>
-                  <Pane prefHeight="76.0" prefWidth="424.0">
-                     <children>
-                        <Button fx:id="User_signupbtn" alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="25.0" mnemonicParsing="false" onAction="#EmergencyPageLink" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #FDFAF6; -fx-border-radius: 20; -fx-background-radius: 10;" text="Sign Up" textFill="#123458">
-                           <font>
-                              <Font name="Elephant" size="13.0" />
-                           </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                     </children>
-                  </Pane>
-               </children>
-            </HBox>
          </children>
-      </VBox>
-   </center>
-</BorderPane>
+      </AnchorPane>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: transparent;">
+         <left>
+            <AnchorPane prefHeight="800.0" prefWidth="438.0" style="-fx-background-color: FDFAF6;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="800.0" fitWidth="438.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@images/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="217.0" prefHeight="23.0" prefWidth="224.0" text="Enter your information" textFill="#123458">
+                     <font>
+                        <Font name="Elephant" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="193.0" fitWidth="190.0" layoutX="119.0" layoutY="279.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/Untitled-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="101.0" layoutY="144.0" prefHeight="48.0" prefWidth="265.0" text="User SignUp" textAlignment="CENTER" textFill="#123458">
+                     <font>
+                        <Font name="Elephant Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="Login_link" layoutX="112.0" layoutY="528.0" onAction="#LoginPageLink" text="Already have an account?" textFill="#3472b0" underline="true">
+                     <font>
+                        <Font name="Elephant" size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button fx:id="backButton" layoutX="34.0" layoutY="745.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-color: rgb(135, 206, 250); -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black;" text="Back">
+                     <font>
+                        <Font name="Elephant" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <VBox prefHeight="537.0" prefWidth="384.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="844.0" text="Personal Information" textAlignment="CENTER" textFill="#fdfaf6">
+                     <font>
+                        <Font name="Elephant" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="78.0" prefWidth="847.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="130.0" text="Set UserName :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="70.0" top="45.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="UserName" alignment="CENTER" prefHeight="30.0" prefWidth="779.0" promptText="Set UserName" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets left="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="25.0" right="140.0" top="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="39.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="64.0" text="Name :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Name" alignment="CENTER" prefHeight="30.0" prefWidth="779.0" promptText="Full Name" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="90.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="85.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="79.0" text="Gender :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Gender" alignment="CENTER" prefHeight="30.0" prefWidth="779.0" promptText="Male/Female" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="77.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="131.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="53.0" text="Age :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Age" alignment="CENTER" prefHeight="30.0" prefWidth="779.0" promptText="Age" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="105.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="177.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="292.0" text="Phone Number :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="PhoneNum" alignment="CENTER" prefHeight="30.0" prefWidth="540.0" promptText="ex.017xxxxxxxx" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="15.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="223.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="141.0" text="NID :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Nid" alignment="CENTER" prefHeight="30.0" prefWidth="205.0" promptText="NId no." style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="269.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="82.0" text="Email ID :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Email" alignment="CENTER" prefHeight="30.0" prefWidth="205.0" promptText="Email Id" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="77.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="315.0" prefHeight="36.0" prefWidth="347.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="154.0" text="Emergency Contact :" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" right="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="EmgContact" alignment="CENTER" prefHeight="30.0" prefWidth="373.0" promptText="Emergency Contact" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="-10.0" right="140.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <ComboBox fx:id="Addressbox" editable="true" onAction="#AddressInfo" opacity="0.96" prefHeight="28.0" prefWidth="386.0" promptText="City/Area" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-background-radius: 15; -fx-border-radius: 15;" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="235.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ComboBox>
+                  <Label alignment="CENTER" prefHeight="72.0" prefWidth="757.0" text="Medical Information" textAlignment="CENTER" textFill="#fdfaf6">
+                     <font>
+                        <Font name="Elephant" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="15.0" prefWidth="757.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="149.0" text="Blood Group :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Blood" alignment="CENTER" prefHeight="30.0" prefWidth="595.0" promptText="ex. B+" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="140.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="421.0" prefHeight="1.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Allergies :" textFill="WHITE">
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="7.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Allergy" alignment="CENTER" prefHeight="30.0" prefWidth="389.0" promptText="Any allergies?" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="82.0" right="143.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Elephant" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="762.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="424.0">
+                           <children>
+                              <Button fx:id="User_signupbtn" alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="25.0" mnemonicParsing="false" onAction="#EmergencyPageLink" onMouseEntered="#hoverEnter" onMouseExited="#hoverExit" prefHeight="26.0" prefWidth="141.0" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-border-radius: 25; -fx-background-radius: 25; -fx-border-color: white;" text="Sign Up" textFill="#fcfeff">
+                                 <font>
+                                    <Font name="Elephant" size="13.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

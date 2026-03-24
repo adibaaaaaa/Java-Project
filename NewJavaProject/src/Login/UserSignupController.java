@@ -27,6 +27,8 @@ import User.UserRequests;
 import java.sql.*;
 import java.awt.Toolkit;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 
 public class UserSignupController implements Initializable {
 
@@ -60,6 +62,18 @@ public class UserSignupController implements Initializable {
     private TextField Allergy;
 
     private String Address;
+    
+    @FXML
+    private void hoverEnter(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
+
+    @FXML
+    private void hoverExit(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
 
     public void LoginPageLink(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/Login/UserLogin.fxml"));
@@ -211,10 +225,10 @@ public class UserSignupController implements Initializable {
     }
 
     private void clearStyles() {
-        UserName.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
-        Email.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
-        PhoneNum.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
-        Nid.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
+        UserName.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
+        Email.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
+        PhoneNum.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
+        Nid.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
     }
 
     private void validateUserInfo(String email, String phnNum, String nid) throws ValidationException {

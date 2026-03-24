@@ -17,8 +17,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -39,6 +41,17 @@ public class AuthorityLoginController {
 
     @FXML
     private TextField password;
+    @FXML
+    private void hoverEnter(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
+
+    @FXML
+    private void hoverExit(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
 
     public void loadDashboard(ActionEvent event, String institutionName) throws IOException {
 

@@ -24,6 +24,8 @@ import java.sql.Connection;
 import java.awt.Toolkit;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 
 public class AuthoritySignupController implements Initializable {
     
@@ -49,6 +51,18 @@ public class AuthoritySignupController implements Initializable {
     private String Area;
     
     private Stage stage;
+    
+    @FXML
+    private void hoverEnter(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
+
+    @FXML
+    private void hoverExit(MouseEvent event) {
+        Button btn = (Button) event.getSource();
+        btn.setStyle("-fx-background-color: rgba(255,255,255,0.3); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;");
+    }
     
             
     
@@ -109,9 +123,9 @@ public class AuthoritySignupController implements Initializable {
     }
     
     private void clearStyles() {
-    Username.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
-    Email.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
-    Contact.setStyle("-fx-background-color: transparent; -fx-border-color: FDFAF6; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill:white;");
+    Username.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
+    Email.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
+    Contact.setStyle("-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: #f3f3eb; -fx-border-width: 1; -fx-text-fill: white; -fx-background-radius: 15; -fx-border-radius: 15;");
     
     }
     

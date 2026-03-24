@@ -8,7 +8,7 @@ public abstract class DBConnection {
 
     protected static final String HOST = "jdbc:mysql://localhost:3306/";
     protected static final String USER = "root";
-    protected static final String PASSWORD = "07jan@2004";
+    protected static final String PASSWORD = "Adi3568@irA";
 
     protected String databaseName;
 
